@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{{ url_for('static' ,filename='css/main.css')}}">
+    <script 
+    src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+    </script>
+    <script src="{{url_for('static', filename='js/main.js')}}"></script>
+</head>
+<body>
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
+
+    <div class="login">
+      <h2 class="active"> BMI CALCULATOR </h2>
+       
+     <br>
+    
+        <input type="number" class="text" id="height" name="height">
+         <span>Height(Cm)</span>
+    
+        <br>
+        
+        <br>
+    
+        <input type="number" class="text" id="weight" name="weight">
+        <span>Weight(Kg)</span>
+        <br>
+    
+        
+        
+        <button class="signin" id="submit" onclick="submit_entry();">
+          SUBMIT
+        </button>
+     
+    <p id="demo"></p>
+    </div>
+</body>
+</html>
+
+    
+
+
+
+
